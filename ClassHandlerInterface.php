@@ -14,7 +14,7 @@ namespace CommonApi\Resource;
  * @package    Resource
  * @copyright  2013 Common Api. All rights reserved.
  * @license    http://www.opensource.org/licenses/mit-license.html MIT License
- * @since      1.0
+ * @since      0.1
  */
 interface ClassHandlerInterface
 {
@@ -24,7 +24,7 @@ interface ClassHandlerInterface
      * @param   boolean $prepend
      *
      * @return  $this
-     * @since   1.0
+     * @since   0.1
      */
     public function register($prepend = true);
 
@@ -32,7 +32,7 @@ interface ClassHandlerInterface
      * Unregister Class Autoloader
      *
      * @return  $this
-     * @since   1.0
+     * @since   0.1
      */
     public function unregister();
 
@@ -43,7 +43,7 @@ interface ClassHandlerInterface
      * @param   string $scheme
      *
      * @return  void|mixed
-     * @since   1.0
+     * @since   0.1
      */
     public function locateNamespace($namespace, $scheme = 'Class');
 }

@@ -14,7 +14,7 @@ namespace CommonApi\Resource;
  * @package    Resource
  * @license    MIT
  * @copyright  2013 Common Api. All rights reserved.
- * @since      1.0
+ * @since      0.1
  */
 interface AdapterInterface
     extends ClassHandlerInterface,
@@ -28,7 +28,7 @@ interface AdapterInterface
      * @param   string $resource_namespace
      *
      * @return  boolean
-     * @since   1.0
+     * @since   0.1
      */
     public function exists($resource_namespace);
 }

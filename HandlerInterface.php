@@ -14,21 +14,10 @@ namespace CommonApi\Resource;
  * @package    Resource
  * @copyright  2013 Common Api. All rights reserved.
  * @license    http://www.opensource.org/licenses/mit-license.html MIT License
- * @since      1.0
+ * @since      0.1
  */
 interface HandlerInterface
 {
-    /**
-     * Locates folder/file associated with Namespace for Resource
-     *
-     * @param   string $resource_namespace
-     * @param   bool   $multiple
-     *
-     * @return  void|mixed
-     * @since   1.0
-     */
-    public function get($resource_namespace, $multiple = false);
-
     /**
      * Set a namespace prefix by mapping to the filesystem path
      *
@@ -37,9 +26,20 @@ interface HandlerInterface
      * @param   boolean $prepend
      *
      * @return  $this
-     * @since   1.0
+     * @since   0.1
      */
     public function setNamespace($namespace_prefix, $namespace_base_directory, $prepend = false);
+
+    /**
+     * Locates folder/file associated with Namespace for Resource
+     *
+     * @param   string $resource_namespace
+     * @param   bool   $multiple
+     *
+     * @return  void|mixed
+     * @since   0.1
+     */
+    public function get($resource_namespace, $multiple = false);
 
     /**
      * Handle located folder/file associated with URI Namespace for Resource
@@ -49,7 +49,7 @@ interface HandlerInterface
      * @param   array  $options
      *
      * @return  void|mixed
-     * @since   1.0
+     * @since   0.1
      */
     public function handlePath($scheme, $located_path, array $options = array());
 
@@ -60,7 +60,7 @@ interface HandlerInterface
      * @param   array  $options
      *
      * @return  mixed
-     * @since   1.0
+     * @since   0.1
      */
     public function getCollection($scheme, array $options = array());
 }

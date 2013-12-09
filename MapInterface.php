@@ -14,7 +14,7 @@ namespace CommonApi\Resource;
  * @package    Resource
  * @license    MIT
  * @copyright  2013 Common Api. All rights reserved.
- * @since      1.0
+ * @since      0.1
  */
 interface MapInterface
 {
@@ -22,7 +22,7 @@ interface MapInterface
      * Create resource map of folder/file locations and Fully Qualified Namespaces
      *
      * @return  object
-     * @since   1.0
+     * @since   0.1
      */
     public function createMap();
 }

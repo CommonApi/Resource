@@ -14,7 +14,7 @@ namespace CommonApi\Resource;
  * @package    Resource
  * @license    MIT
  * @copyright  2013 Common Api. All rights reserved.
- * @since      1.0
+ * @since      0.1
  */
 interface NamespaceInterface
 {
@@ -25,7 +25,7 @@ interface NamespaceInterface
      * @param   string $scheme
      *
      * @return  void|mixed
-     * @since   1.0
+     * @since   0.1
      */
     public function locateNamespace($namespace, $scheme = 'Class');
 
@@ -37,7 +37,7 @@ interface NamespaceInterface
      * @param   boolean $prepend
      *
      * @return  $this
-     * @since   1.0
+     * @since   0.1
      */
     public function setNamespace($namespace_prefix, $base_directory, $prepend = false);
 }

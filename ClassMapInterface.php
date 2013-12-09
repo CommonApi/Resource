@@ -14,7 +14,7 @@ namespace CommonApi\Resource;
  * @package    Resource
  * @copyright  2013 Common Api. All rights reserved.
  * @license    http://www.opensource.org/licenses/mit-license.html MIT License
- * @since      1.0
+ * @since      0.1
  */
 interface ClassMapInterface
 {
@@ -22,7 +22,7 @@ interface ClassMapInterface
      * Create interface to concrete references
      *
      * @return  $this
-     * @since   1.0
+     * @since   0.1
      */
     public function createMap();
 }
