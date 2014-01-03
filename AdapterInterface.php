@@ -3,7 +3,7 @@
  * Resource Adapter Interface
  *
  * @package    Resource
- * @copyright  2013 Common Api. All rights reserved.
+ * @copyright  2014 Amy Stephen. All rights reserved.
  * @license    http://www.opensource.org/licenses/mit-license.html MIT License
  */
 namespace CommonApi\Resource;
@@ -13,8 +13,8 @@ namespace CommonApi\Resource;
  *
  * @package    Resource
  * @license    MIT
- * @copyright  2013 Common Api. All rights reserved.
- * @since      0.1
+ * @copyright  2014 Amy Stephen. All rights reserved.
+ * @since      1.0
  */
 interface AdapterInterface
     extends ClassHandlerInterface,
