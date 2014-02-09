@@ -25,7 +25,7 @@ interface LocatorInterface
      * @param   array  $options
      *
      * @return  void|mixed
-     * @since   0.1
+     * @since   1.0
      */
     public function get($uri_namespace, array $options = array());
 }

@@ -28,7 +28,7 @@ interface AdapterInterface
      * @param   string $resource_namespace
      *
      * @return  boolean
-     * @since   0.1
+     * @since   1.0
      */
     public function exists($resource_namespace);
 }

@@ -24,7 +24,7 @@ interface SchemeInterface
      * @param   string $scheme
      *
      * @return  object|array
-     * @since   0.1
+     * @since   1.0
      */
     public function getScheme($scheme = '');
 
@@ -37,7 +37,7 @@ interface SchemeInterface
      * @param   bool   $replace
      *
      * @return  $this
-     * @since   0.1
+     * @since   1.0
      */
     public function setScheme($scheme_name, $handler = 'File', array $extensions = array(), $replace = false);
 }

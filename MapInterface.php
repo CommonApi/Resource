@@ -22,7 +22,7 @@ interface MapInterface
      * Create resource map of folder/file locations and Fully Qualified Namespaces
      *
      * @return  object
-     * @since   0.1
+     * @since   1.0
      */
     public function createMap();
 }
