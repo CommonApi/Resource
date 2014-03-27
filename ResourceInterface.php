@@ -1,6 +1,6 @@
 <?php
 /**
- * Resource Map Interface
+ * Resource Interface
  *
  * @package    Resource
  * @copyright  2014 Amy Stephen. All rights reserved.
@@ -9,20 +9,26 @@
 namespace CommonApi\Resource;
 
 /**
- * Resource Map Interface
+ * Resource Interface
  *
  * @package    Resource
  * @license    MIT
  * @copyright  2014 Amy Stephen. All rights reserved.
  * @since      1.0
  */
-interface MapInterface
+interface ResourceInterface
+    extends ClassLoaderInterface,
+    LocatorInterface,
+    NamespaceInterface,
+    SchemeInterface
 {
     /**
-     * Create resource map of folder/file locations and namespaces
+     * Verify if the resource namespace has been defined or not
      *
-     * @return  object
+     * @param   string $resource_namespace
+     *
+     * @return  boolean
      * @since   1.0
      */
-    public function createMap();
+    public function exists($resource_namespace);
 }
