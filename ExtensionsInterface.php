@@ -22,7 +22,7 @@ interface ExtensionsInterface
      * Catalog Types
      *
      * @return  $this
-     * @since   1.0
+     * @since   1.0.0
      */
     public function createMap();
 }

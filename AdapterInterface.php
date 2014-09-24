@@ -26,7 +26,7 @@ interface AdapterInterface
      * @param   boolean $prepend
      *
      * @return  $this
-     * @since   1.0
+     * @since   1.0.0
      */
     public function setNamespace($namespace_prefix, $namespace_base_directory, $prepend = false);
 
@@ -37,7 +37,7 @@ interface AdapterInterface
      * @param   bool   $multiple
      *
      * @return  void|mixed
-     * @since   1.0
+     * @since   1.0.0
      */
     public function get($resource_namespace, $multiple = false);
 
@@ -49,7 +49,7 @@ interface AdapterInterface
      * @param   array  $options
      *
      * @return  void|mixed
-     * @since   1.0
+     * @since   1.0.0
      */
     public function handlePath($scheme, $located_path, array $options = array());
 
@@ -60,7 +60,7 @@ interface AdapterInterface
      * @param   array  $options
      *
      * @return  mixed
-     * @since   1.0
+     * @since   1.0.0
      */
     public function getCollection($scheme, array $options = array());
 }

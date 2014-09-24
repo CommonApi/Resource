@@ -18,9 +18,9 @@ namespace CommonApi\Resource;
  */
 interface ResourceInterface
     extends ClassLoaderInterface,
-    LocatorInterface,
-    NamespaceInterface,
-    SchemeInterface
+            LocatorInterface,
+            NamespaceInterface,
+            SchemeInterface
 {
     /**
      * Verify if the resource namespace has been defined or not
@@ -28,7 +28,7 @@ interface ResourceInterface
      * @param   string $resource_namespace
      *
      * @return  boolean
-     * @since   1.0
+     * @since   1.0.0
      */
     public function exists($resource_namespace);
 }

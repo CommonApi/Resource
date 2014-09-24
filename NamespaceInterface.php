@@ -25,7 +25,7 @@ interface NamespaceInterface
      * @param   string $scheme
      *
      * @return  void|mixed
-     * @since   1.0
+     * @since   1.0.0
      */
     public function locateNamespace($namespace, $scheme = 'Class');
 
@@ -37,7 +37,7 @@ interface NamespaceInterface
      * @param   boolean $prepend
      *
      * @return  $this
-     * @since   1.0
+     * @since   1.0.0
      */
     public function setNamespace($namespace_prefix, $base_directory, $prepend = false);
 }

@@ -24,7 +24,7 @@ interface ClassLoaderInterface
      * @param   boolean $prepend
      *
      * @return  $this
-     * @since   1.0
+     * @since   1.0.0
      */
     public function register($prepend = true);
 
@@ -32,7 +32,7 @@ interface ClassLoaderInterface
      * Unregister Class Autoloader
      *
      * @return  $this
-     * @since   1.0
+     * @since   1.0.0
      */
     public function unregister();
 
@@ -43,7 +43,7 @@ interface ClassLoaderInterface
      * @param   string $scheme
      *
      * @return  void|mixed
-     * @since   1.0
+     * @since   1.0.0
      */
     public function locateNamespace($namespace, $scheme = 'Class');
 }
