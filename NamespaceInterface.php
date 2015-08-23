@@ -19,17 +19,6 @@ namespace CommonApi\Resource;
 interface NamespaceInterface
 {
     /**
-     * Locates a resource using only the namespace
-     *
-     * @param   string $namespace
-     * @param   string $scheme
-     *
-     * @return  void|mixed
-     * @since   1.0.0
-     */
-    public function locateNamespace($namespace, $scheme = 'Class');
-
-    /**
      * Set a namespace prefix by mapping to the filesystem path
      *
      * @param   string  $namespace_prefix

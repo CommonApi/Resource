@@ -12,16 +12,16 @@ namespace CommonApi\Resource;
  * Resource Map Interface
  *
  * @package    Resource
- * @license    MIT
+ * @license    http://www.opensource.org/licenses/mit-license.html MIT License
  * @copyright  2014 Amy Stephen. All rights reserved.
- * @since      1.0
+ * @since      1.0.0
  */
 interface MapInterface
 {
     /**
      * Create resource map of folder/file locations and namespaces
      *
-     * @return  object
+     * @return  $this
      * @since   1.0.0
      */
     public function createMap();

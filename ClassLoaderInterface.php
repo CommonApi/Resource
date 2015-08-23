@@ -35,15 +35,4 @@ interface ClassLoaderInterface
      * @since   1.0.0
      */
     public function unregister();
-
-    /**
-     * Locates a resource using only the namespace
-     *
-     * @param   string $namespace
-     * @param   string $scheme
-     *
-     * @return  void|mixed
-     * @since   1.0.0
-     */
-    public function locateNamespace($namespace, $scheme = 'Class');
 }

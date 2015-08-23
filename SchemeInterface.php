@@ -14,30 +14,29 @@ namespace CommonApi\Resource;
  * @package    Resource
  * @copyright  2014 Amy Stephen. All rights reserved.
  * @license    http://www.opensource.org/licenses/mit-license.html MIT License
- * @since      1.0
+ * @since      1.0.0
  */
 interface SchemeInterface
 {
-    /**
-     * Get Scheme (or all schemes)
-     *
-     * @param   string $scheme
-     *
-     * @return  object|array
-     * @since   1.0.0
-     */
-    public function getScheme($scheme = '');
-
-    /**
-     * Define Scheme, associated Handler and allowable file extensions (empty array means any extension allowed)
+/**
+     * Get Scheme
      *
      * @param   string $scheme_name
-     * @param   string $handler
-     * @param   array  $extensions
-     * @param   bool   $replace
+     *
+     * @return  null|object
+     * @since   1.0.0
+     */
+    public function getScheme($scheme_name);
+
+    /**
+     * Define scheme, allowable file extensions and adapter instance
+     *
+     * @param   string             $scheme_name
+     * @param   ResourceInterface  $adapter
+     * @param   array              $extensions
      *
      * @return  $this
      * @since   1.0.0
      */
-    public function setScheme($scheme_name, $handler = 'File', array $extensions = array(), $replace = false);
+    public function setScheme($scheme_name, ResourceInterface $adapter, array $extensions = array());
 }
